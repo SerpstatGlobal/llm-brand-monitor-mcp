@@ -1,5 +1,8 @@
 # LLM Brand Monitor MCP Server
 
+[![npm version](https://badge.fury.io/js/@serpstat%2Fllm-brand-monitor-mcp.svg)](https://www.npmjs.com/package/@serpstat/llm-brand-monitor-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 [MCP](https://modelcontextprotocol.io/) server for [LLM Brand Monitor](https://llmbrandmonitor.com) — a platform that tracks how AI models mention your brand.
 
 Connect Claude, Cursor, Windsurf, or any MCP-compatible client to manage brand monitoring projects, run scans across 350+ LLMs, and analyze results — all through natural language.
@@ -15,7 +18,7 @@ Add to your `claude_desktop_config.json`:
   "mcpServers": {
     "lbm": {
       "command": "npx",
-      "args": ["-y", "llm-brand-monitor-mcp"],
+      "args": ["-y", "@serpstat/llm-brand-monitor-mcp"],
       "env": {
         "LBM_API_KEY": "lbm_your_key_here"
       }
@@ -27,7 +30,7 @@ Add to your `claude_desktop_config.json`:
 ### Claude Code
 
 ```bash
-claude mcp add lbm-mcp -e LBM_API_KEY=lbm_your_key_here -- npx -y llm-brand-monitor-mcp
+claude mcp add lbm-mcp -e LBM_API_KEY=lbm_your_key_here -- npx -y @serpstat/llm-brand-monitor-mcp
 ```
 
 ### From Source
@@ -63,8 +66,10 @@ LBM_API_KEY=lbm_your_key_here npx @modelcontextprotocol/inspector node dist/inde
 ## Getting an API Key
 
 1. Sign up at [llmbrandmonitor.com](https://llmbrandmonitor.com)
-2. Go to **Settings** > **API Keys**
-3. Create a new key (starts with `lbm_`)
+2. Open your [Profile page](https://llmbrandmonitor.com/profile)
+3. Copy your API key (starts with `lbm_`)
+
+<img src="https://img.serpstat.com/vitos/2026-04-21_3d779555.png" alt="API key in LLM Brand Monitor profile" width="600" />
 
 ## Tools
 

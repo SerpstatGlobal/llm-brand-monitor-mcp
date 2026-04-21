@@ -1,5 +1,5 @@
 {
-  "name": "llm-brand-monitor-mcp",
+  "name": "@serpstat/llm-brand-monitor-mcp",
   "version": "1.0.0",
   "description": "MCP server for LLM Brand Monitor — track how AI models mention your brand",
   "license": "MIT",
@@ -12,12 +12,12 @@
     "dist/"
   ],
   "engines": {
-    "node": ">=20"
+    "node": ">=18"
   },
   "scripts": {
     "build": "tsc",
     "prepare": "tsc",
-    "serve": "node dist/index.js",
+    "start": "node dist/index.js",
     "test": "jest"
   },
   "keywords": [
@@ -27,26 +27,24 @@
     "brand-monitoring",
     "ai",
     "claude",
-    "anthropic"
+    "anthropic",
+    "openai",
+    "chatgpt"
   ],
   "repository": {
     "type": "git",
     "url": "https://github.com/SerpstatGlobal/llm-brand-monitor-mcp.git"
   },
+  "author": "Serpstat Team",
   "homepage": "https://llmbrandmonitor.com",
   "bugs": {
     "url": "https://github.com/SerpstatGlobal/llm-brand-monitor-mcp/issues"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.26.0",
-    "axios": "^1.11.0",
-    "express": "^5.2.1",
-    "jsonwebtoken": "^9.0.3",
-    "jwks-rsa": "^3.2.2"
+    "axios": "^1.11.0"
   },
   "devDependencies": {
-    "@types/express": "^5.0.6",
-    "@types/jsonwebtoken": "^9.0.10",
     "@types/node": "^24.2.1",
     "jest": "^29.7.0",
     "ts-jest": "^29.1.1",
