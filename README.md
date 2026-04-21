@@ -1,6 +1,7 @@
 # LLM Brand Monitor MCP Server
 
 [![npm version](https://badge.fury.io/js/@serpstat%2Fllm-brand-monitor-mcp.svg)](https://www.npmjs.com/package/@serpstat/llm-brand-monitor-mcp)
+[![MCP Badge](https://lobehub.com/badge/mcp/serpstatglobal-llm-brand-monitor-mcp)](https://lobehub.com/mcp/serpstatglobal-llm-brand-monitor-mcp)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 [MCP](https://modelcontextprotocol.io/) server for [LLM Brand Monitor](https://llmbrandmonitor.com) — a platform that tracks how AI models mention your brand.
