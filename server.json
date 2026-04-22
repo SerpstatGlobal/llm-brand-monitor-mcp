@@ -1,0 +1,38 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.SerpstatGlobal/llm-brand-monitor",
+  "title": "LLM Brand Monitor",
+  "description": "Track how 350+ AI models mention your brand — manage projects, run scans, analyze results",
+  "version": "1.0.1",
+  "repository": {
+    "url": "https://github.com/SerpstatGlobal/llm-brand-monitor-mcp",
+    "source": "github"
+  },
+  "icons": [
+    {
+      "src": "https://llmbrandmonitor.com/icon-light.svg",
+      "mimeType": "image/svg+xml",
+      "sizes": ["any"]
+    }
+  ],
+  "websiteUrl": "https://llmbrandmonitor.com",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@serpstat/llm-brand-monitor-mcp",
+      "version": "1.0.1",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "LBM_API_KEY",
+          "description": "API key from llmbrandmonitor.com/profile",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
